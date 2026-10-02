@@ -1,0 +1,36 @@
+import streamlit as st
+
+st.set_page_config(
+    page_title="ElectroLab Assistant",
+    page_icon="⚡",
+    layout="wide"
+)
+
+st.title("⚡ ElectroLab Assistant")
+st.write("Asisten Praktikum Elektronika")
+
+st.divider()
+
+st.subheader("Pilih Fitur")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.info("⚡ Hukum Ohm")
+
+with col2:
+    st.info("🔋 Kalkulator Daya")
+
+with col3:
+    st.info("🔗 Resistor Seri & Paralel")
+
+col4, col5, col6 = st.columns(3)
+
+with col4:
+    st.info("🔄 Konversi Satuan")
+
+with col5:
+    st.info("🌊 Waveform Checker")
+
+with col6:
+    st.info("📋 Riwayat Perhitungan")
